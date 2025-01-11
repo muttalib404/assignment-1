@@ -1,100 +1,315 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: fira sans;
+}
 
-.fira-sans-bold {
-    font-family: "Fira Sans";
-    font-weight: 800;
-    font-style: normal;
-  }
+body {
+    padding: 0 160px;
+    background-color: rgba(189, 189, 189, 0.1);
+}
+
+
 
 /* header style */
 header{
     display: flex;
-    height: 100 hug;
     justify-content: space-between;
-    padding: 24px 160px;
-    margin: 0 auto;
+    align-items: center;
+    margin-bottom: 60px;
+    padding: 30px 0;
 }
+
 header button{
-    width: 116px;
-    height: 52px;
-    font-weight: 400;
+    font-size: 18px;
+    font-weight: 600;
     color: #006A50;
     padding: 15px 30px;
     border-color: #006A50;
     border-radius: 8px;
+    transition: color .3s, background-color .3s;
+    
+}
+header button:hover{
+   color: white;
+   background-color: #006A50;
     
 }
 /* banner style */
 
 #banner{
     background-color: #c6e4d6;
-    width: 1280px;
-    height: 560px;
-    padding: 80px 100px;
-    gap: 64px;
+    height: 460px;
     border-radius: 24px;
-    justify-content: center;
-    margin-left: 160px;
+    padding: 60px;
+    margin-bottom: 120px;
 }
+ .banner-headings h1{
+    font-size: 50px;
+    margin-bottom: 32px;
+ }
+
+ .banner-headings h3{
+    margin-bottom: 24px;
+    color: rgb(100, 99, 99);
+    font-size: 28px;
+ }
+
+ .banner-headings {
+    width: 60%;
+ }
+
 .banner-container{
+    padding: 10px 30px;
     justify-content: space-between;
     display: flex;
-    border-width: 622px 326px;
-    font-family: "Fira Sans";
-     
+    align-items: center;
+    
 }
-.banner-container button{
-    background-color: #006A50;
-    -webkit-text-fill-color: #FFFFFF;
+
+.banner-imag {
+    width: 40%;
+}
+.button-main{
+    background-color: #04926f;
+    border: none;
+    padding: 14px 20px;
     border-radius: 8px;
-    padding: 17px 34px;
-    width: 270px;
-    height: 56px;
-    gap: 16px;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    transition: background-color .3s, box-shadow .3s;
 }
-.banner-container image{
-    width: 474.03px;
-    height: 400px;
+
+.button-main:hover{
+    background-color: #036149;
+    box-shadow: 6px 6px 7px rgba(0, 0, 0, 0.2);
+}
+.banner-image img {
+    width: 100%;
 }
 /* pillers style */
 .piller-container{
     display: flex;
     gap: 24px;
-    background-color: #ffffffa1;
-    width: 302px;
-    height: 244px;
-    padding: 24px 24px;
     justify-items: center;
+    align-items: center;
+}
+.piller-box{
+    border: 1px solid rgba(0, 0, 0, 0.342);
+    background-color: white;
+    padding: 32px;
+    border-radius: 8px;
+    width: 410px;
+}
+#pillers{
+    margin-bottom: 120px;
 }
 #vission-section{
     justify-content: center;
+    margin-bottom: 120px;
 }
-#vission-secton p{
-    width: 1280px;
-    height: 48;
-}
+
 
 .vission-container{
     display: flex;
     gap: 24px;
-    justify-items: flex-start;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 16px;
 
 }
+.v-1{
+    border-radius: 16px;
+    border: 1px solid rgba(0, 0, 0, 0.281);
+}
 .digital{
-    background-color: #81B4FC;
+    background-color: rgba(84, 144, 245, 0.2);
     width: 410.67px;
     height: 325px;
     padding: 32px 32px;
 
 }
+.digital button{
+    width: 122px;
+    height: 41px;
+    border-radius: 8px;
+    padding: 20px 11px;
+    background-color: #5490F5;
+    text-align: center;
+    -webkit-text-fill-color: #FFFFFF;
+} 
 .green{
     background-color: #C6E4D6;
     width: 410.67px;
     height: 325px;
     padding: 32px 32px;
 }
+.green button{
+    width: 122px;
+    height: 41px;
+    border-radius: 8px;
+    padding: 20px 11px;
+    background-color: #09A15C;
+    text-align: center;
+    -webkit-text-fill-color: #FFFFFF;
+}
 .modern{
     background-color: #F7EBCF;
     width: 410.67px;
     height: 325px;
     padding: 32px 32px;
+}
+.modern button{
+    width: 122px;
+    height: 41px;
+    border-radius: 8px;
+    padding: 20px 11px;
+    background-color: #FFC239;
+    text-align: center;
+    -webkit-text-fill-color: #FFFFFF;
+}
+#quote-content{
+    padding: 42px;
+    background-color: white;
+    border-radius: 16px;
+    border: 1px solid rgba(0, 0, 0, 0.288);
+    background-image: url("../assets/quote-bg.png");
+    background-repeat: no-repeat;
+    background-position: 3% 6%;
+    margin-bottom: 120px;
+
+}
+#opinion{
+    margin-bottom: 120px;
+    display: none;
+}
+
+#opinion tr th{
+    background-color: #C6E4D6;
+    width: 1128px;
+    height: 24px;
+    text-align: end;
+}
+#news{
+    margin-bottom: 120px;
+}
+#donate{
+    margin-bottom: 120px;
+}
+#newsletter{
+    margin-bottom: 120px;
+}
+.news-itmes{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+    background-color: white;
+    border-radius: 16px;
+    border: 1px solid rgba(0, 0, 0, 0.219);
+    padding: 32px;
+}
+
+#donate {
+    text-align: center;
+}
+
+.takas {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 50px;
+    margin-bottom: 24px;
+}
+
+.takas h1 {
+    padding: 40px 50px;
+    font-size: 32px;
+    border-radius: 8px;
+    border: 1px solid rgba(0, 0, 0, 0.219);
+    background-color: white;
+    cursor: pointer;
+}
+
+#selected {
+    background-color: #c6e4d6;
+}
+
+.donate-submit {
+    padding: 0 160px;
+    text-align: center;
+}
+
+.donate-submit input {
+    width: 100%;
+    padding: 18px 30px;
+    border: none;
+    border-radius: 8px;
+    margin-bottom: 24px;
+}
+
+.donate-submit input::placeholder {
+    text-align: center;
+    font-size: 18px;
+}
+#donate-headings {
+    text-align: center;
+    margin-bottom: 32px;
+}
+#newsletter {
+    padding: 40px 220px;
+    border-radius: 24px;
+    background-color: #c6e4d6;
+    border: 1px solid rgba(0, 0, 0, 0.315);
+    text-align: center;
+}
+
+.form-container form input {
+    width: 60%;
+    padding: 10px 30px;
+    border-radius: 12px 0 0 12px;
+    outline: none;
+    border: none;
+    font-size: 18px;
+    margin: -15px;
+
+}
+
+.subscribe-button {
+    background-color: #04926f;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 0 12px 12px 0;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    transition: background-color .3s, box-shadow .3s;
+}
+
+.subscribe-button:hover {
+    background-color: #036149;
+    box-shadow: 6px 6px 7px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+    background-color: white;
+    padding: 30px 220px;
+    text-align: center;
+}
+
+footer>h2 {
+    margin-bottom: 24px;
+}
+
+footer>hr {
+    margin-bottom: 24px;
+}
+
+footer>div>img{
+    text-align: center;
+    margin: 0 10px;
+}
+footer>hr{
+    padding: 0 50px;
 }
